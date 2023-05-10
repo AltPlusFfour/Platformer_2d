@@ -20,10 +20,11 @@ public class enemyAttack : MonoBehaviour
     }
 void OnTriggerEnter2D(Collider2D collision)
  {
-    if (collision.transform.name == "Player")
-    {
-        health.currentHealth = health.currentHealth - damage;
-    }
+     var chealth = col.GetComponentInParent<phealth>();
+     if (chealth == health)
+     {
+	 health.currentHealth = health.currentHealth - damage;
+     }
  }
 
  void TakeDamage(int damage)
