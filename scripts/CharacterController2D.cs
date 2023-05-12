@@ -3,7 +3,7 @@ using UnityEngine.Events;
 public class CharacterController2D : MonoBehaviour
 {
 	public playerMovementPlus Plus;
-	public Collider m_ObjectCollider;
+	public Collider2D m_ObjectCollider;
 	m_ObjectCollider = GetComponent<Collider>();
 	m_ObjectCollider.isTrigger = true;
 	[SerializeField] public float m_JumpForce = 4000f;							// Amount of force added when the player jumps.

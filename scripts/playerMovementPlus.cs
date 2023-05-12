@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class playerMovementPlus : MonoBehaviour {
-	public Collider m_ObjectCollider;
-	m_ObjectCollider = GetComponent<Collider>();
-	m_ObjectCollider.isTrigger = true;
+    //	public Collider m_ObjectCollider;
+	//	m_ObjectCollider = GetComponent<Collider>();
+	//	m_ObjectCollider.isTrigger = true;
 	public CharacterController2D controller;
 	
 	public float runSpeed = 40f;
