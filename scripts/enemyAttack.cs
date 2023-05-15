@@ -23,7 +23,8 @@ void OnTriggerEnter2D(Collider2D collision)
      var chealth = col.GetComponentInParent<phealth>();
      if (chealth == health)
      {
-	 health.currentHealth = health.currentHealth - damage;
+	 // health.currentHealth = health.currentHealth - damage;
+	 health.TakeDamage(damage);
      }
  }
 
